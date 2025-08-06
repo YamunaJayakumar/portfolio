@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--stylesheet  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- cdn fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div id="container">
+        <!-- navigation bar -->
+        <nav>
+            <img src="./images/wen.png" alt="logo" class="logo">
+            <ul>
+                <li class="list-item">
+                    <a  class="links" href="#home">HOME</a>
+                </li>
+                <li class="list-item">
+                    <a  class="links" href="#about">ABOUT</a>
+                </li>
+                <li class="list-item">
+                    <a  class="links" href="#skill">SKILLS</a>
+                </li>
+                <li class="list-item">
+                    <a  class="links" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- home -->
+        <section id="home">
+            <div class="homecontents">
+                <h1 id="username">I'm Ana <span id="lname">Steel</span></h1>
+                <p id="userdetails">
+                    This is my official portfolio website to describe<br>
+                    all Details and work experience in web development
+                </p>
+                <a id="download" href="./yamuuna-Resume.pdf" download>Download CV</a>
+            </div>
+            <div class="homeImages">
+                <img  class="group1" id="shape"src="./images/ground-removebg-preview.png" alt="shape">
+                <img  class="group1" id="girl" src="./images/girl-removebg-preview.png" alt="girl">
+            </div>
+        </section>
+        <!-- about -->
+        <section id="about">
+            <div class="sectionHead">
+                <h2 class="mainHead">About Me</h2>
+                <span class="subHead">Introduction</span>
+            </div>
+            <div class="aboutBody">
+                <div class="aboutImg">
+                    <img src="./images/about.png"  alt="about me">
+                </div>
+                <div class="aboutContent">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum consequatur enim atque blanditiis perferendis, voluptatem libero! Rerum saepe minima neque tempora repellat eaque, necessitatibus repellendus quam, accusamus at voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus nesciunt minima pariatur omnis aperiam vitae, sunt ducimus quam quis, sequi nostrum, doloribus ratione corporis sed tenetur optio quia repellendus numquam.</p>
+                    <div class="informations">
+                        <div class="infoBox">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Ana Steel</span>
+                        </div>
+                        <div class="infoBox">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>9008765432</span>
+                        </div>
+                        <div class="infoBox">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>anasteel@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- skills -->
+        <section id="skill">
+            <div class="sectionHead">
+                <h2 class="mainHead">Skills</h2>
+                <span class="subHead">My Skills</span>
+            </div>
+            <div class="skillcontent">
+                <div class="progressBars">
+                    <!-- HTML progress bar -->
+                    <div class="bars">
+                        <h3 class="barhead">HTML</h3>
+                        <span class="barpercent">92%</span>
+                        <div class="basebar"></div>
+                        <div class="htmlbar basebar"></div>
+                    </div>
+                    <!-- css progress bar -->
+                     <div class="bars">
+                        <h3 class="barhead">CSS</h3>
+                        <span class="barpercent">88%</span>
+                        <div class="basebar"></div>
+                        <div class="cssbar basebar"></div>
+                    </div>
+                    <!-- js progress bar -->
+                     <div class="bars">
+                        <h3 class="barhead">Javascript</h3>
+                        <span class="barpercent">80%</span>
+                        <div class="basebar"></div>
+                        <div class="jsbar basebar"></div>
+                    </div>
+                    <!-- react progress bar -->
+                     <div class="bars">
+                        <h3 class="barhead">React</h3>
+                        <span class="barpercent">78%</span>
+                        <div class="basebar"></div>
+                        <div class="reactbar basebar"></div>
+                    </div>
+                </div>
+                <div class="skillImg">
+                    <img  id="myskillimg"src="./images/skills.avif" alt="skillimage">
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+        <section id="contact">
+            <div class="sectionHead">
+                <h2 class="mainHead">Contact</h2>
+                <span class="subHead">My Contact</span>
+            </div>
+            <div class="iconCollections">
+                <!-- linkdin -->
+                 <div class="icon">
+                    <a href=" https://github.com/YamunaJayakumar" target="_blank"><i class="fa-brands fa-linkedin-in  brands"></i></a>
+                 </div>
+                <!-- github -->
+                 <div class="icon">
+                    <a href="https://github.com/YamunaJayakumar " target="_blank"><i class="fa-brands fa-github brands"></i></a>
+                 </div>
+                <!--twitter -->
+                <div class="icon">
+                    <a href="https://github.com/YamunaJayakumar " target="_blank"><i class="fa-brands fa-twitter brands"></i></a>
+                 </div>
+                <!-- facebook -->
+                 <div class="icon">
+                    <a href="https://github.com/YamunaJayakumar " target="_blank"><i class="fa-brands fa-facebook-f brands"></i></a>
+                 </div>
+
+            </div>
+        </section>
+        <!-- footer-an container tag -->
+        <footer>
+            <p id="copyRight"> &copy; My Protfolio Website - July 2024, All Rights Reserved to &reg; Ana Steel</p>
+            <div class="icon upArrow">
+                <a href="#container "><i class="fa-solid fa-angle-up  brands"></i></a>
+            </div>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
