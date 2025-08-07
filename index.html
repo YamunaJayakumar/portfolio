@@ -13,6 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">    
+    <!-- animations using library for block elements only-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- aos animation cdn link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- aos animation cdn script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div id="container">
@@ -37,7 +46,7 @@
         <!-- home -->
         <section id="home">
             <div class="homecontents">
-                <h1 id="username">I'm Ana <span id="lname">Steel</span></h1>
+                <h1 class=" animate__animated animate__slideInDown" id="username">I'm Ana <span id="lname">Steel</span></h1>
                 <p id="userdetails">
                     This is my official portfolio website to describe<br>
                     all Details and work experience in web development
@@ -56,7 +65,7 @@
                 <span class="subHead">Introduction</span>
             </div>
             <div class="aboutBody">
-                <div class="aboutImg">
+                <div class="aboutImg"  data-aos="flip-left">
                     <img src="./images/about.png"  alt="about me">
                 </div>
                 <div class="aboutContent">
@@ -91,28 +100,28 @@
                         <h3 class="barhead">HTML</h3>
                         <span class="barpercent">92%</span>
                         <div class="basebar"></div>
-                        <div class="htmlbar basebar"></div>
+                        <div data-aos="fade-right" class="htmlbar basebar"></div>
                     </div>
                     <!-- css progress bar -->
                      <div class="bars">
                         <h3 class="barhead">CSS</h3>
                         <span class="barpercent">88%</span>
                         <div class="basebar"></div>
-                        <div class="cssbar basebar"></div>
+                        <div  data-aos="fade-right"class="cssbar basebar"></div>
                     </div>
                     <!-- js progress bar -->
                      <div class="bars">
                         <h3 class="barhead">Javascript</h3>
                         <span class="barpercent">80%</span>
                         <div class="basebar"></div>
-                        <div class="jsbar basebar"></div>
+                        <div data-aos="fade-right" class="jsbar basebar"></div>
                     </div>
                     <!-- react progress bar -->
                      <div class="bars">
                         <h3 class="barhead">React</h3>
                         <span class="barpercent">78%</span>
                         <div class="basebar"></div>
-                        <div class="reactbar basebar"></div>
+                        <div  data-aos="fade-right"class="reactbar basebar"></div>
                     </div>
                 </div>
                 <div class="skillImg">
@@ -150,11 +159,14 @@
         <footer>
             <p id="copyRight"> &copy; My Protfolio Website - July 2024, All Rights Reserved to &reg; Ana Steel</p>
             <div class="icon upArrow">
-                <a href="#container "><i class="fa-solid fa-angle-up  brands"></i></a>
+                <a href="#container"><i class="fa-solid fa-angle-up  brands"></i></a>
             </div>
         </footer>
 
     </div>
     
 </body>
+<script>
+  AOS.init();
+</script>
 </html>
